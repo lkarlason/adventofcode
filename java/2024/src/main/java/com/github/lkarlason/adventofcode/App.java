@@ -6,7 +6,8 @@ import org.slf4j.LoggerFactory;
 enum Days {
     DAY_ONE,
     DAY_TWO,
-    DAY_THREE;
+    DAY_THREE,
+    DAY_FOUR;
 }
 
 public class App {
@@ -19,6 +20,7 @@ public class App {
             case DAY_ONE -> DayOneSolution.solve("./data/day1.txt");
             case DAY_TWO -> DayTwoSolution.solve("./data/day2.txt");
             case DAY_THREE -> DayThreeSolution.solve("./data/day3.txt");
+            case DAY_FOUR -> DayFourSolution.solve("./data/day4.txt");
         }
     }
 }
