@@ -28,7 +28,7 @@ public class DayThreeSolution {
         }
     }
 
-    public static long partOne(final String input) {
+    private static long partOne(final String input) {
         long result = 0L;
         final Matcher matcher = patternPartOne.matcher(input);
         List<Long[]> matches = matcher.results()
@@ -41,7 +41,7 @@ public class DayThreeSolution {
         return result;
     }
 
-    public static long partTwo(final String input) {
+    private static long partTwo(final String input) {
         long result = 0L;
         final Matcher matcher = patternPartTwo.matcher(input);
         boolean doMultiply = true;

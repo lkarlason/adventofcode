@@ -22,7 +22,7 @@ public class DayFourSolution {
         logger.info("Day 4 part 2: {}", partTwo(grid));
     }
 
-    public static long partOne(final char[][] grid) {
+    private static long partOne(final char[][] grid) {
         long matches = 0L;
 
         int n = grid.length;
@@ -99,7 +99,7 @@ public class DayFourSolution {
         return matches;
     }
 
-    public static long partTwo(final char[][] grid) {
+    private static long partTwo(final char[][] grid) {
         long matches = 0L;
 
         int n = grid.length;
@@ -122,7 +122,7 @@ public class DayFourSolution {
         return matches;
     }
 
-    public static char[][] readData(final String fileName) {
+    private static char[][] readData(final String fileName) {
         try {
             final List<String> lines = Files.readAllLines(Path.of(fileName));
             final char[][] grid = new char[lines.size()][lines.get(0).length()];

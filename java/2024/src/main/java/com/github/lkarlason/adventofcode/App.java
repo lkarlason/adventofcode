@@ -7,7 +7,8 @@ enum Days {
     DAY_ONE,
     DAY_TWO,
     DAY_THREE,
-    DAY_FOUR;
+    DAY_FOUR,
+    DAY_FIVE;
 }
 
 public class App {
@@ -21,6 +22,7 @@ public class App {
             case DAY_TWO -> DayTwoSolution.solve("./data/day2.txt");
             case DAY_THREE -> DayThreeSolution.solve("./data/day3.txt");
             case DAY_FOUR -> DayFourSolution.solve("./data/day4.txt");
+            case DAY_FIVE -> DayFiveSolution.solve("./data/day5.txt");
         }
     }
 }
