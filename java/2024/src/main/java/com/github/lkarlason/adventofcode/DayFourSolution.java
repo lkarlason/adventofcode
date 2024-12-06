@@ -1,7 +1,5 @@
 package com.github.lkarlason.adventofcode;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -15,6 +13,8 @@ import org.slf4j.LoggerFactory;
  */
 public class DayFourSolution {
     private static final Logger logger = LoggerFactory.getLogger(DayFourSolution.class);
+
+    private DayFourSolution() {}
 
     public static void solve(final String fileName) {
         final char[][] grid = readData(fileName);
